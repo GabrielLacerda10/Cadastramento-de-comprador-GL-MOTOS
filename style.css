@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #001f3f, #003366);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container{
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 25px;
+  color: #001f3f;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grupo{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+select{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus{
+  border-color: #003366;
+}
+
+.linha{
+  display: flex;
+  gap: 15px;
+}
+
+.linha .grupo{
+  flex: 1;
+}
+
+button{
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #003366;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: #001f3f;
+}
+
+/* RESPONSIVIDAD */
+
+
+@media(max-width: 768px){
+
+  .linha{
+    flex-direction: column;
+  }
+
+  .container{
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+}
